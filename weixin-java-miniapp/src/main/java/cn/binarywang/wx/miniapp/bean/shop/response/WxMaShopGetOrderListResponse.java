@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * @author leiin
@@ -25,6 +26,6 @@ public class WxMaShopGetOrderListResponse extends WxMaShopBaseResponse implement
   /**
    * 订单列表
    */
-  @SerializedName("order")
-  private WxMaShopOrderResult order;
+  @SerializedName("orders")
+  private List<WxMaShopOrderResult> orders;
 }
